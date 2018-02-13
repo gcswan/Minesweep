@@ -1,13 +1,11 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { render } from "react-dom";
 
+const App = () =>
+  <div>
+    <h1>Hello, World</h1>
+    <h2>This is sub header</h2>
+    <p>This is a Reactjs application</p>
+  </div>;
 
-const App = () => 
-    <div> 
-        <h1>Hello World</h1>
-        <p>This should be showing some</p>
-    </div>;
-
-
-render(<App />, document.getElementById("root"));
-
+render(<App />, document.getElementById("app"));
