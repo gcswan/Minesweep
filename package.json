@@ -8,7 +8,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint **/*.{js,jsx} --quiet",
     "watch": "webpack --watch"
-    
   },
   "repository": {
     "type": "git",
@@ -45,8 +44,10 @@
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.9",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
-    "prettier": "^1.10.2"
+    "prettier": "^1.10.2",
+    "style-loader": "^0.20.1"
   }
 }

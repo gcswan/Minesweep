@@ -1,11 +1,11 @@
 import React from "react";
 import { render } from "react-dom";
+import "./styles/app.css";
+import Board from "./components/Board";
 
 const App = () =>
   <div>
-    <h1>Hello, World</h1>
-    <h2>This is sub header</h2>
-    <p>This is a Reactjs application</p>
+    <Board />
   </div>;
 
 render(<App />, document.getElementById("app"));
