@@ -23,8 +23,7 @@ class Board extends React.Component {
         function createGrid() {
             for(let i = 0; i < 5; i++){
                 grid = grid[i] = new Array(5).fill([]); 
-                    for(let j = 0; j < 5; j++){
-                        grid = grid[i][j] = new Array(5).fill(" ")
+                    
                     } 
             }
             return grid
