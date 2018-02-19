@@ -24,26 +24,18 @@ class Board extends React.Component {
 
     render() {
         const grid = [];
-        let rows = 5;
-        let cols = 5;
-        let gridStyle = "grid-5";
-        if(this.state.difficulty === 'easy'){
-            rows = 5;
-            cols = 5;
-            gridStyle = "grid-5"
-        };
-        if(this.state.difficulty === 'medium'){
-            rows = 10;
-            cols = 10;
-            gridStyle = "grid-15"
-        }
-        if(this.state.difficulty === 'hard'){
-            rows = 15;
-            cols = 15;
-            gridStyle = "grid-30"
-        }
-       
+        let rows;
+        let cols;
+        let gridStyle;
 
+        switch(this.state.difficulty){
+            case "easy": rows = 5; cols = 5; gridStyle = "grid-5";
+            break;
+            case "medium": rows = 10; cols = 10; gridStyle = "grid-10";
+            break;
+            case "hard": rows = 15; cols = 15; gridStyle = "grid-15";
+            break; 
+        }
         
   
         const createGrid = () => {
@@ -52,7 +44,7 @@ class Board extends React.Component {
                 grid[row] = [];
                 //   make columns by pushing in null values;
                 for(let col = 0; col < cols; col++){
-                    grid[row].push(<Cell />);
+                    grid[row].push(<Cell hint={0} mine={true}/>);
                 }
             }
             return grid;
@@ -101,38 +93,3 @@ export default Board;
 
 
 
-
-// class Board extends React.Component {
-//     constructor(){
-//         super()
-//         this.state = {
-//            rows: 5,
-//            cols: 5 
-//         }
-          
-        
-//     }
-   
-//     render(){
-        
-//         const rows = this.state.rows;
-//         const cols = this.state.cols
-        
-//         let grid = []
-        
-//         function createGrid() {
-//             for(let i = 0; i < 5; i++){
-//                 grid = grid[i] = new Array(5).fill([]);   
-//                 } 
-//             }
-//             return grid
-//         }
-       
-        
-        
-//         return (
-           
-//         )
-        
-//     };
-// }

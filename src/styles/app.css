@@ -2,7 +2,17 @@
     height: 50px;
     width: 50px;
     border: 1px solid black;
-    background-color: grey;
+    background-color: rgb(196, 196, 196);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 26px;
+}
+.hidden {
+    visibility: hidden;
+}
+.cell:hover{
+    cursor: pointer;
 }
 
 .grid-5 {
@@ -10,12 +20,12 @@
     grid-template-rows: repeat(5, 50px);
     grid-template-columns: repeat(5, 50px);
 }
-.grid-15 {
+.grid-10 {
     display: grid;
     grid-template-rows: repeat(10, 50px);
     grid-template-columns: repeat(10, 50px);
 }
-.grid-30 {
+.grid-15 {
     display: grid;
     grid-template-rows: repeat(15, 50px);
     grid-template-columns: repeat(15, 50px);
