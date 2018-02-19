@@ -1,3 +1,10 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    align-content: center;
+}
 .cell {
     height: 50px;
     width: 50px;
@@ -24,9 +31,13 @@
     display: grid;
     grid-template-rows: repeat(10, 50px);
     grid-template-columns: repeat(10, 50px);
+    
 }
 .grid-15 {
     display: grid;
     grid-template-rows: repeat(15, 50px);
     grid-template-columns: repeat(15, 50px);
+    
+}
+.container {
 }

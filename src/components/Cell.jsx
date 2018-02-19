@@ -5,13 +5,12 @@ class Cell extends React.Component {
     constructor(props){
         super()
         this.state = {
-            visibility: 'hidden'
+            visibility: 'visible'
         }
     }
 
 
     render(){
-        console.log(this.props)
         const hint = this.props.hint;
         const mine = String.fromCharCode(0x125CF)
         const score = this.props.mine ? mine : hint;

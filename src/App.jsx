@@ -9,7 +9,7 @@ const App = () => {
 
 
   return (
-   <div>
+   <div className="conatiner">
       <Board />
     </div>
   );
